@@ -9,3 +9,10 @@ Output: Ticket { nameOfMovie: "Barbie", time: "10pm", age: 19}
 Test: "It will have a base price of $11"
 Code: Ticket("Barbie", "10 pm", 19)
 Output: Ticket { nameOfMovie: "Barbie", time: "10pm", age: 19, price: $11}
+
+Describe: adjustPrice()
+
+Test: "It will change the price to $7 if age less than = 13"
+Code: Ticket {...... age: 7, price: $11}
+    Ticket.adjustPrice()
+Output: Ticket {..... age: 7, price: $7}

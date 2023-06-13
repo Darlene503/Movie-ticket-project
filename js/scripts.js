@@ -4,3 +4,9 @@ function Ticket(nameOfMovie, time, age) {
     this.age = age;
     this.price = "$11"
 }
+
+Ticket.prototype.adjustPrice = function() {
+    if (this.age <= 13) {
+        this.price = "7"
+    }
+};
